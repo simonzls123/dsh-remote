@@ -31,7 +31,7 @@ function Rpc($m, $p) {
 }
 
 # 1) 创建远端会话（cwd 是远端目录）
-$s = (Rpc 'session.create' @{ cwd = 'C:\Users\administrator\Desktop' }).sessionId
+$s = (Rpc 'session.create' @{ cwd = 'C:\Users\<你的用户>\Desktop' }).sessionId
 
 # 2) 投递任务（mode:'queue' 排队执行；'steer' 用于插话）
 $task = @'
